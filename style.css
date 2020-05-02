@@ -1,0 +1,154 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    /* background: url(https://media.giphy.com/media/3oEduMhFrYvKk4giac/giphy.gif) no-repeat 50% 50%; */
+    background: url(https://media.giphy.com/media/USs6qiFW1j8AGoRJxO/giphy.gif) no-repeat 50% 50%;
+    background-size: cover;
+    font-family: 'Monument Extended';
+    text-transform: uppercase;
+}
+
+.gif-overlay{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(14, 14, 14, 0.8);
+    z-index: 1;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+}
+
+.artist{
+    z-index: 2;
+    position: fixed;
+    line-height: 80px;
+    margin: 0  40px;
+    color: #fff;
+}
+
+.watch{
+    z-index: 2;
+    position: fixed;
+    line-height: 80px;
+    right: 140px;
+    color: gray;
+    padding: 0 10px;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+.watch ion-icon{
+    z-index: 2;
+    position: relative;
+    top:1px;
+    padding-right: 6px;
+}
+
+.menu{
+    z-index:2;
+    position: fixed;
+    line-height: 80px;
+    right: 0;
+    margin: 0 40px;
+    color: #fff;
+    padding-top: 4px;
+}
+
+.hero-gif{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48vw;
+    height: 46vh;
+    background: url(https://media.giphy.com/media/LRyCuSMPTsGq8nKQlE/giphy.gif) no-repeat 50% 50%;
+    background-size: cover;
+    animation: animationGIF 4s cubic-bezier(0, .58, 1, .58);
+    animation-delay: 2s;
+}
+
+
+.hero-title{
+    position: absolute;
+    top:40%;
+    left: 20%;
+    transform: translate(-50% -50%);
+    mix-blend-mode: difference;
+}
+
+.hero-title h1{
+    color: blueviolet;
+    font-size: 80px;
+    margin-bottom: 0%;
+}
+
+.glitch{
+    position: relative;
+}
+
+
+
+
+.hero-title p {
+    color: gray;
+    font-family: 'Helvetica';
+    font-size: 12px;
+    letter-spacing: 14px;
+}
+
+
+.social-media{
+    position: absolute;
+    bottom: .5%;
+    transform: translateY(-50);
+}
+
+.social-media ul li{
+    display: inline-block;
+    list-style: none;
+    color: gray;
+    padding: 0 10px;
+    font-family: 'helvetica';
+    font-size:12px;
+    font-weight: 100;
+}
+
+.listensong{
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+
+.listensong ul li{
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+    padding: 0 10px;
+}
+
+#rotated{
+    color: #fff;
+    font-family: 'helvetica';
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.rotatethis{
+    position: absolute;
+    top: 54%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    animation: rotating 20s linear infinite;
+}
+
