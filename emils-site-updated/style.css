@@ -308,7 +308,7 @@ a {
     margin-bottom: 0%;
 } 
 
-
+/* 
 .glitch2{
     position: relative;
     font-family: "Helvetica" !important;
@@ -368,7 +368,9 @@ a {
 
 .glitch2::after {    
     animation: noise-anim 2s infinite linear alternate-reverse;
-} 
+}  */
+
+
 
 .glitch {
     position: relative;
@@ -624,14 +626,14 @@ a {
 .content .show-more-tracks {
     text-align: end;
     color: rgba(255, 255, 255, 0.63);
-    font-size: 1.5vw;
+    font-size: 1vw;
     cursor: pointer;
 }
 
 .content .show-less-tracks {
     text-align: end;
     color: rgba(255, 255, 255, 0.808);
-    font-size: 1.5vw;
+    font-size: 1vw;
     display: none;
     cursor: pointer;
 }
