@@ -306,6 +306,67 @@ a {
 } 
 
 
+.glitch2{
+    position: relative;
+    font-family: "Helvetica" !important;
+}
+
+.glitch2::before,
+.glitch2:after{
+    content: attr("data-text");
+    position: absolute;
+    font-family: "Helvetica" !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.glitch2:before{
+    left:4px;
+    text-shadow: -31px 0 rgb(0, 174, 255);
+    background: black;
+}
+
+.glitch2:after {
+    left: -3px;
+    text-shadow: -3px 0 blue;
+    background: black;
+}
+
+.glitch2::before {
+    clip: rect(54px, 250px, 56px, 40px);
+}
+
+@keyframes noise-anim {
+    0% {
+        clip-path: inset(40% 0 61% 0);
+    }
+    20% {
+        clip-path: inset(92% 0 1% 0);
+    }
+    40% {
+        clip-path: inset(43% 0 1% 0);
+    }
+    60% {
+        clip-path: inset(25% 0 58% 0);
+    }
+    80% {
+        clip-path: inset(54% 0 7% 0);
+    }
+    100% {
+        clip-path: inset(58% 0 43% 0);
+    }
+}
+
+.glitch2::before {
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+.glitch2::after {    
+    animation: noise-anim 2s infinite linear alternate-reverse;
+} 
+
 .glitch {
     position: relative;
     font-family: "Helvetica" !important;
