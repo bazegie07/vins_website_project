@@ -21,7 +21,10 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    
 }
+
+
 
 .load-page {
     height: 100vh;
@@ -203,7 +206,7 @@ a {
 }
 
 .artist {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     color: #fff;
     top: 0vh;
@@ -558,6 +561,7 @@ a {
 }
 
 .content .iframe {
+    z-index: 50;
     display: flex;
     justify-content: center;
     margin-top: 6vh;
@@ -582,7 +586,7 @@ a {
 
 .section-header span {
     font-family: 'Shadows Into Light', cursive;
-    font-size: 4vw;
+    font-size: 2vw;
     color: #fafafa;
     /* border-bottom: 1px rgba(255, 255, 255, 0.753) solid; */
 }
@@ -598,12 +602,14 @@ a {
 }
 
 .content .listen .row {
+    z-index: 50;
     display: flex;
     justify-content: space-between;
 }
 
 .content .listen img {
     width: 17vw;
+    z-index: 50;
 }
 
 .content .listen .fake-pic {
@@ -628,6 +634,34 @@ a {
     font-size: 1.5vw;
     display: none;
     cursor: pointer;
+}
+
+
+#rotated3 {
+    color: rgba(114, 112, 112, 0.342);
+    font-family: 'helvetica';
+    font-weight: 100;
+    font-size: 8vw;
+    z-index: 100;
+    
+} 
+
+
+.rotatethis3 {
+    position: absolute;
+    bottom: -180%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    animation: rotating 20s linear infinite;
+} 
+
+@keyframes rotating  {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .media {
@@ -687,8 +721,14 @@ a {
     font-size: 16px;
 }
 .wow {
+    
     color: gray;
-    font-family: 'Monument Extended'; 
+    font-family: 'Helvetica';
+    font-size: 1vw;
+    font-weight: 100;
+    letter-spacing: 4px;
+    cursor: pointer;
+    
 }
 
 #contact-form {
@@ -755,6 +795,39 @@ textarea:focus {
 .send:hover {
     background: #dfdfdf;
     color: #101010;
+}
+
+
+
+
+#rotated2 {
+    color:#fff;
+    font-family: 'helvetica';
+    font-weight: 100;
+    font-size: 2vw;
+    z-index: 1;
+    
+} 
+
+.content-form{
+    position: relative;
+}
+
+.rotatethis2 {
+    position: absolute;
+    bottom: 1000%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    animation: rotating 20s linear infinite;
+} 
+
+@keyframes rotating  {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 /* end of contact section */
 
@@ -846,6 +919,9 @@ textarea:focus {
 #media ul li {
     display: inline-block;
 }
+
+
+
 
 @media only screen and (max-width:769px) {
     /* .vinces-part .album {

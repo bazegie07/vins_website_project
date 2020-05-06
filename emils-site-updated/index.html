@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 
     <!-- ICONS -->
-    <!-- <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script> -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="style.css">
@@ -26,6 +26,7 @@
             <div class="box"></div>
         </div>
     </div>
+
     <!-- ********** MODALS ********* -->
     <div class="modals">
         <div class="modal" id="love">
@@ -220,7 +221,8 @@
             <h2 class="section-header"><span data-text="Albums">Albums</span></h2>
             <div class="container">
                 <div class="row">
-                    <div class="col">
+
+                <div class="col">
                         <img src="images/eyes.png" alt="album" class="album" onclick="modal('eyes')">
                     </div>
                     <div class="col">
@@ -244,11 +246,13 @@
                         <img src="images/love.png" alt="album" class="album" onclick="modal('love')">
                     </div>
                 </div>
+
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <img src="images/die.png" alt="album" class="album" onclick="modal('die')">
+
                     </div>
                     <div class="col">
                         <img src="images/problem.png" alt="album" class="album" onclick="modal('problem')">
@@ -294,10 +298,11 @@
                     </div>
                 </div>
             </div>
+
         </div>
         <div class="show-more-tracks">Show More</div>
         <div class="show-less-tracks">Show Less</div>
-        
+
         <h2 class="section-header glitch2" id="media" style="display: inline-block;" data-text="Media">
             <span>Media</span>
         </h2>
@@ -421,16 +426,20 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <h3 class="wow hello">say hello 👋</h3><br>
-                        <p class="wow contact-para">Lets collaborate bla bla bla bla bla bla</p>
+                        <p class="wow contact-para"> I dream big,  I work hard,  I stay focused and surround my self with good people, are you in ?</p>
                     </div>
                 </div>
+
             </div>
+
     <!--------------- hero section ends here --------------->
 
 <!--------------- form section starts here --------------->
-<div class="container">
+<div class="container container-form">
+    
         <div >
             <div class="col-lg-8">
+
                     <form name="contact-form" id="contact-form" method="post" action="">
 
                     <ul>
@@ -462,8 +471,16 @@
                     <button type="submit" name="contact-submit" id="contact-submit" class="send wow fadeInUp">Send Message</button>
 
                     </form>
+ 
             </div>
+            <div class="col-lg-12">
+                    <div class="rotatethis2">
+                            <a href="mailto:insomusic7@gmail.com"><h2 id="rotated2"> • collaborate • hit • me • up •insomusic7@gmail.com</h2></a>
+                    </div>
+            </div>
+
         </div>
+
     </div>
 
 
@@ -475,7 +492,7 @@
                                 <div class="collab">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <p class="wow fadeInUp">You want to collaborate? Lets GO!! </p>
+                                            <p class="wow">Music Artist </p>
                                         </div>
                                     </div>
                                 </div>
@@ -492,7 +509,7 @@
                                     <div class="row">
                                         <div class="col-lg-4" id="personal">
                                             <p class="wow ">connect with me</p>
-                                            <h4 class="wow" >ig @insomusic7</h4>
+                                            <h4 class="wow" >ig @inso_4</h4>
                                             <br><br>
                                         </div>
                         
@@ -500,10 +517,10 @@
                                         <p class="wow" data-wow-delay="0s">follow me</p>
                         
                                         <ul>
-                                            <li id="fb" class="wow" >fb</li>
-                                            <li id="ig" class="wow" >ig</li>
-                                            <li id="tw" class="wow" >tw</li>
-                                            <li id="yt" class="wow">yt</li>
+                                            <!-- <li id="fb" class="wow" >fb</li> -->
+                                            <a href="https://www.instagram.com/inso_4/"><li id="ig" class="wow" >ig</li></a>
+                                            <a href="https://twitter.com/inso_4"><li id="tw" class="wow" >tw</li></a>
+                                            <!-- <li id="yt" class="wow">yt</li> -->
                                         </ul>
                         
                                         <br><br>
@@ -544,7 +561,10 @@
     <script src="app.js"></script>
     <script>
 
-        const circleType = new CircleType(document.getElementById('rotated'));
+        let circleType = new CircleType(document.getElementById('rotated'));
+        let cirleTypeB = new CircleType(document.getElementById('rotated2'));
+        let cirleTypeC = new CircleType(document.getElementById('rotated3'));
+        
 
 
         function clickFollow() {
@@ -552,10 +572,7 @@
             console.log(button);
         }
 
-        $('#videolink').magnificPopup({
-            type: 'inline',
-            midClick: true
-        });
+
 
     </script>
 </body>
