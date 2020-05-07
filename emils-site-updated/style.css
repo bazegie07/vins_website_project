@@ -308,67 +308,71 @@ a {
     margin-bottom: 0%;
 } 
 
-/* 
+
 .glitch2{
     position: relative;
-    font-family: "Helvetica" !important;
+    /* font-family: "Helvetica" !important; */
 }
 
 .glitch2::before,
 .glitch2:after{
-    content: attr("data-text");
+    content: attr(data-text);
     position: absolute;
-    font-family: "Helvetica" !important;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 
-.glitch2:before{
-    left:4px;
+.glitch2::before {
+    left: 4px;
     text-shadow: -31px 0 rgb(0, 174, 255);
-    background: black;
+    
+    }
+
+.glitch2::after {
+    left: -3px;
+    text-shadow: -3px 0 rgb(0, 174, 255);
+    
+    }
+
+.glitch2:before{
+    color: #ff00c1;
+    animation: glitch-effect 3s infinite;
 }
 
 .glitch2:after {
-    left: -3px;
-    text-shadow: -3px 0 blue;
-    background: black;
+    color: #3498db;
+    animation: glitch-effect 2s infinite;
 }
 
-.glitch2::before {
-    clip: rect(54px, 250px, 56px, 40px);
+
+
+@keyframes glitch-effect {
+    0%{
+        left: -2px;
+        top: -2px;
+    }
+    25%{
+        left: 2px;
+        top: 0px;
+    }
+    50%{
+        left: -1px;
+        top: 2px;
+    }
+    75%{
+        left: 1px;
+        top: -1px;
+    }
+    100%{
+        left: 0px;
+        top: -2px;
+    }
 }
 
-@keyframes noise-anim {
-    0% {
-        clip-path: inset(40% 0 61% 0);
-    }
-    20% {
-        clip-path: inset(92% 0 1% 0);
-    }
-    40% {
-        clip-path: inset(43% 0 1% 0);
-    }
-    60% {
-        clip-path: inset(25% 0 58% 0);
-    }
-    80% {
-        clip-path: inset(54% 0 7% 0);
-    }
-    100% {
-        clip-path: inset(58% 0 43% 0);
-    }
-}
 
-.glitch2::before {
-    animation: noise-anim 2s infinite linear alternate-reverse;
-}
-
-.glitch2::after {    
-    animation: noise-anim 2s infinite linear alternate-reverse;
-}  */
 
 
 
@@ -987,5 +991,37 @@ textarea:focus {
     }
     .content .show-more-tracks {
         font-size: 3.5vw;
+    }
+}
+
+
+
+
+.imgglitch::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(hero.gif);
+    opacity: .9;
+    mix-blend-mode: hard-light;
+    
+}   
+
+.imgglitch:hover::before{
+    animation: animate .2s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position:  0 0;
+    }
+    10%{
+        background-position:  5px 0;
+    }
+    20%{
+        background-position:  -5px 0;
     }
 }
