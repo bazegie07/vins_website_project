@@ -311,7 +311,7 @@ a {
 
 .glitch2{
     position: relative;
-    /* font-family: "Helvetica" !important; */
+    font-family: "Helvetica" !important;
 }
 
 .glitch2::before,
@@ -529,6 +529,10 @@ a {
     z-index: 50;
     padding: 0 15%;
     background-color: rgba(14, 14, 14, 0.8);
+    /* width: 100%;
+    height: 100%;
+    background: url(hero.gif) no-repeat 50% 50%;
+    background-size: cover; */
 }
 
 .content .back-to-top-button {
@@ -589,6 +593,8 @@ a {
     margin-bottom: 4vh;
     cursor: default;
 }
+
+
 
 .section-header span {
     font-family: 'Shadows Into Light', cursive;
